@@ -1,0 +1,23 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+:root {
+    --color-azul-1: #033e8c;
+    --color-azul-2: #034c8c;
+    --color-azul-3: #035aa6;
+    --color-blanco: #fff;
+    --color-negro: #0000;
+}
+
+/* ----------------------------------------------------------------------------------- */

@@ -1,0 +1,93 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+:root {
+    --color-azul-1: #033e8c;
+    --color-azul-2: #034c8c;
+    --color-azul-3: #035aa6;
+    --color-azul-1: #fff;
+    --color-azul-1: #0000;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+/* ESTILOS PARA LA PÁGINA DE POLÍTICA DE PRIVACIDAD */
+body {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.politica {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--color-blanco);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: var(--color-gris);
+    border-bottom: 2px solid var(--color-azul-1);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--color-azul-2);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.fecha {
+    font-style: italic;
+    color: var(--color-azul-2);
+}
+
+p {
+    line-height: 1.5;
+}
+
+div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-azul-3);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+    font-size: 25px;
+}
+
+a:hover {
+    color: var(--color-azul-3);
+}

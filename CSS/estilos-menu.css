@@ -1,0 +1,217 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+:root {
+    --color-azul-1: #033e8c;
+    --color-azul-2: #034c8c;
+    --color-azul-3: #035aa6;
+    --color-azul-1: #fff;
+    --color-azul-1: #0000;
+}
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+/*Estilos para el: contenedor-encabezado*/
+.contenedor-encabezado {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-azul-1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-encabezado img {
+    height: 65px;
+    border-radius: 10px;
+}
+
+/*Estilos para el: contenedor-menu*/
+header {
+    position: sticky;
+    height: auto;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-negro);
+    padding: 5px 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 70px;
+    align-items: center;
+
+}
+
+.menu-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@keyframes girarLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    80% {
+        transform: rotate(25deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+}
+
+.menu-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: girarLogo 5s linear infinite;
+}
+
+.menu-logo img {
+    height: 35px;
+}
+
+.lista-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.item-menu {
+    margin-right: 20px;
+}
+
+.enlace-menu {
+    display: block;
+    color: var(--color-azul-1);
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.enlace-menu:hover {
+    background-color: var(--color-blanco);
+}
+
+/*MEDIA QUERYS*/
+@media (max-width:990px) {
+
+    .contenedor-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        z-index: 1000;
+        position: sticky;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        text-align: center;
+    }
+
+    .menu-logo {
+        margin-top: 20px;
+    }
+
+    .menu-links {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+
+    .lista-menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-menu {
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+        color: var(--color-blanco);
+        margin-top: 15px;
+    }
+
+    .hamburguesa {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .linea {
+        width: 30px;
+        height: 5px;
+        background-color: var(--color-blanco);
+        margin: 3px 0;
+    }
+
+    .menu-links-responsive {
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .menu-links-responsive.activo {
+        max-height: 200px;
+    }
+
+    .menu-links.activo {
+        display: flex;
+
+        .enlace-menu:hover {
+            width: 500px;
+            border-radius: 5px;
+            background-color: var(--color-blanco);
+        }
+    }
+}
